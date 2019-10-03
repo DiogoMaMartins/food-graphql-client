@@ -1,12 +1,7 @@
-import React from 'react';
-import ApolloClient from 'apollo-boost';
+import React, { Component } from 'react';
 import { ApolloProvider } from 'react-apollo';
-import CreateReservation from './createReservation';
-
-const apolloClient = new ApolloClient({
-  uri: "http://localhost:4000"
-});
-
+import CreateReservation from './components/CreateReservation';
+import apolloClient from './services/apollo';
 // ⚽️  Goal
 // --------
 
